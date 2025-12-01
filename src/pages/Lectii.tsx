@@ -1,6 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { BookOpen, Zap, Activity } from "lucide-react";
+import { BookOpen, Zap, Activity, ExternalLink } from "lucide-react";
+import newtonLawsImage from "@/assets/newton-laws.jpg";
+import motionTypesImage from "@/assets/motion-types.jpg";
+import mechanicalEnergyImage from "@/assets/mechanical-energy.jpg";
 
 const Lectii = () => {
   return (
@@ -26,6 +29,20 @@ const Lectii = () => {
             </div>
           </CardHeader>
           <CardContent>
+            <img 
+              src={newtonLawsImage} 
+              alt="Legile lui Newton" 
+              className="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <a 
+              href="https://www.youtube.com/watch?v=kKKM8Y-u7ds" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:underline mb-4"
+            >
+              <ExternalLink className="w-4 h-4" />
+              Videoclip educațional: Legile lui Newton
+            </a>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-left">
@@ -112,6 +129,20 @@ const Lectii = () => {
             </div>
           </CardHeader>
           <CardContent>
+            <img 
+              src={motionTypesImage} 
+              alt="Tipuri de Mișcare" 
+              className="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <a 
+              href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:underline mb-4"
+            >
+              <ExternalLink className="w-4 h-4" />
+              Videoclip educațional: Mișcarea Rectilinie Uniformă și Uniform Variată
+            </a>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-left">
@@ -172,6 +203,20 @@ const Lectii = () => {
             </div>
           </CardHeader>
           <CardContent>
+            <img 
+              src={mechanicalEnergyImage} 
+              alt="Energia Mecanică" 
+              className="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <a 
+              href="https://www.youtube.com/watch?v=w4QFJb9a8vo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:underline mb-4"
+            >
+              <ExternalLink className="w-4 h-4" />
+              Videoclip educațional: Energia Cinetică și Potențială
+            </a>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-left">
